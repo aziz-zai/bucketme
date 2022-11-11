@@ -3,9 +3,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
-export default function NavBar({ home, toggle }) {
+export default function NavBar({ toggle, scrollNav }) {
   return (
-    <div className={home ? "navTrans" : "navBlack"}>
+    <div className={scrollNav ? "navBlack" : "navTrans"}>
       <div className="navContainer">
         <Link to="/" className="navLink">
           <div className="navLogo">bucket.me</div>

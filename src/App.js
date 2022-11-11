@@ -27,7 +27,7 @@ export default function App() {
   return (
     <>
       <Router>
-        <NavBar home={true} toggle={toggle} />
+        <NavBar toggle={toggle} scrollNav={scrollNav} />
         <SideBar toggle={toggle} isOpen={isOpen} />
         <Routes>
           <Route>
